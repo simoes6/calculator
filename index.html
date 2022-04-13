@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Payment Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+	
+    <script type="text/javascript">
+        function sum() {
+            var txtFirstNo = document.getElementById('txtFirstNo').value;
+            var txtSecondNo = document.getElementById('txtSecondNo').value;
+            var result = parseInt(txtFirstNo) + parseInt(txtSecondNo);
+            if (!isNaN(result)) {
+                document.getElementById('txtResult').value = result;
+            }
+        }
+    </script>
+
+</head>
+
+
+
+<body>
+	<section class="header">
+
+
+		
+			<h1>Payment Calculator</h1>
+		
+
+			<br><br>
+		
+        <label class="large-label" for="name">Monthly Payment</label>
+        <input type="text" id="txtFirstNo" placeholder="Your monthly payment" onkeyup="sum()" />
+
+        <br>
+
+<div class="large-label2">
+        <label class="large-label2" for="name" >Initial Balance</label>
+        <input type="text" id="txtSecondNo" placeholder="Your initial balance" onkeyup="sum()" />
+
+        <br />
+
+        <div class="large-label3">
+        	 <label class="large-label3" for="name" >Result</label>
+            <input type="text" id="txtResult"/>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<br><br>
+
+<button type="submit" class="submitbutton">Submit</button>
+
+
+<br><br><br><br>
+
+<table>
+  <tr>
+    <th><h2>Payment Due Date</h2></th>
+    <th><h2>Payment Ammount</h2></th>
+    <th><h2>Balance After Payment</h2></th>
+  </tr>
+  <tr class="white">
+     <td><h2>01/01/2021</h2></td>
+    <td><h3>$230.00</h3></td>
+    <td><h3>$13,245.00</h3></td>
+  </tr>
+  <tr class="black">
+    <td><h2>02/01/2021</h2></td>
+    <td><h3>$230.00</h3></td>
+    <td><h3>$13,015.00</h3></td>
+  </tr>
+  <tr class="white">
+    <td><h2>03/01/2021</h2></td>
+    <td><h3>$230.00</h3></td>
+    <td><h3>$12,785.00</h3></td>
+  </tr>
+  <tr class="black">
+    <td><h2>04/01/2021</h2></td>
+    <td><h3>$230.00</h3></td>
+    <td><h3>$12,555.00</h3></td>
+  </tr>
+  <tr class="white">
+    <td><h2>05/01/2021</h2></td>
+    <td><h3>$230.00</h3></td>
+    <td><h3>$12,325.00</h3></td>
+  </tr>
+  <tr class="black">
+    <td><h2>06/01/2021</h2></td>
+    <td><h3>$230.00</h3></td>
+    <td><h3>$12,095.00</h3></td>
+  </tr>
+</table>
+
+
+  
+
+	</section>
+
+</body>
+</html>
